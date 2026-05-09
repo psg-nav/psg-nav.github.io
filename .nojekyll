@@ -1,0 +1,3 @@
+# This file tells GitHub Pages not to run Jekyll on this site.
+# Since this is a pure static HTML site with no Jekyll features,
+# skipping Jekyll speeds up build and avoids theme-related issues.
