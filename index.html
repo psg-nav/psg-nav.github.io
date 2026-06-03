@@ -142,14 +142,6 @@
 <section id="method">
   <h2>Method</h2>
   <p>PSG-Nav consists of three key components: the <strong>3D Probabilistic Scene Graph</strong> that models perception uncertainty via categorical node distributions; the <strong>Multiverse Decision</strong> module that samples plausible world states and selects the globally optimal landmark; and the <strong>Evidential Experience Calibrator (EEC)</strong> that maintains online evidential memory for false-positive suppression.</p>
-  <div class="fig-card" style="margin-top:1.5rem">
-    <img src="images/page_fig_method.jpg" alt="Method Overview" onclick="openLightbox(this)" style="cursor:zoom-in; width:100%; display:block;" />
-    <div class="fig-caption"><strong>Figure 2.</strong> Detailed architecture of the PSG-Nav framework.</div>
-  </div>
-  <div class="fig-card" style="margin-top:1.5rem">
-    <img src="images/page_fig2_pipeline.jpg" alt="System Pipeline" onclick="openLightbox(this)" style="cursor:zoom-in; width:100%; display:block;" />
-    <div class="fig-caption"><strong>Figure 3.</strong> Full system pipeline from raw observations to navigation decisions.</div>
-  </div>
 </section>
 
 <hr class="divider" />
@@ -165,28 +157,6 @@
     <div class="stat-card"><div class="num">44.8%</div><div class="label">SR on HM3D</div></div>
     <div class="stat-card"><div class="num">66.1%</div><div class="label">SR on MP3D</div></div>
     <div class="stat-card"><div class="num">67.9%</div><div class="label">SR on HSSD</div></div>
-  </div>
-  <h2 style="margin-top:3rem">Ablation Study</h2>
-  <p>Each component brings consistent gains: the Probabilistic Scene Graph, Multiverse Decision, and EEC are all critical to the final performance.</p>
-  <div class="fig-card" style="margin-top:1.5rem">
-    <img src="images/page_ablation_qualitative.jpg" alt="Ablation Study" onclick="openLightbox(this)" style="cursor:zoom-in; width:100%; display:block;" />
-    <div class="fig-caption"><strong>Figure 4.</strong> Ablation study and qualitative comparisons.</div>
-  </div>
-  <h2 style="margin-top:3rem">Qualitative Results</h2>
-  <p>Navigation trajectories on HM3D, MP3D, and HSSD demonstrating PSG-Nav's ability to reason under uncertainty and reach the target.</p>
-  <div class="fig-grid single" style="margin-top:1.5rem">
-    <div class="fig-card">
-      <img src="images/page_vis_hm3d.jpg" alt="HM3D visualization" onclick="openLightbox(this)" style="cursor:zoom-in; width:100%; display:block;" />
-      <div class="fig-caption"><strong>HM3D</strong> &mdash; Representative navigation trajectories.</div>
-    </div>
-    <div class="fig-card">
-      <img src="images/page_vis_mp3d.jpg" alt="MP3D visualization" onclick="openLightbox(this)" style="cursor:zoom-in; width:100%; display:block;" />
-      <div class="fig-caption"><strong>MP3D</strong> &mdash; Representative navigation trajectories.</div>
-    </div>
-    <div class="fig-card">
-      <img src="images/page_vis_hssd.jpg" alt="HSSD visualization" onclick="openLightbox(this)" style="cursor:zoom-in; width:100%; display:block;" />
-      <div class="fig-caption"><strong>HSSD</strong> &mdash; Representative navigation trajectories.</div>
-    </div>
   </div>
 </section>
 
