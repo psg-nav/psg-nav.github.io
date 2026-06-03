@@ -87,7 +87,7 @@
       <a href="#method">Method</a>
       <a href="#results">Results</a>
       <a href="#videos">Videos</a>
-      <a href="#bibtex">BibTeX</a>
+
     </div>
   </div>
 </nav>
@@ -108,18 +108,10 @@
   </p>
   <div class="btn-group">
     <a href="https://arxiv.org/abs/2606.01313" target="_blank" class="btn btn-primary">&#128196; Paper (arXiv)</a>
-    <a href="https://arxiv.org/pdf/2606.01313" target="_blank" class="btn btn-secondary">&#128209; PDF</a>
-    <a href="https://github.com/Chenrf1121/psg-nav" target="_blank" class="btn btn-secondary">&#128187; Code (GitHub)</a>
-    <a href="#results" class="btn btn-secondary">&#128202; Results</a>
+    <span class="btn btn-secondary" style="color:var(--muted);cursor:default;pointer-events:none">&#128187; Code: Coming Soon</span>
   </div>
 </div>
 
-<div class="teaser">
-  <img src="images/page_fig1_teaser.jpg" alt="PSG-Nav Teaser" onclick="openLightbox(this)" style="cursor:zoom-in" />
-  <p class="caption">
-    <strong>Figure 1.</strong> PSG-Nav constructs a 3D Probabilistic Scene Graph with full semantic categorical distributions, enabling uncertainty-aware landmark selection via Multiverse Decision and robust goal verification via the Evidential Experience Calibrator.
-  </p>
-</div>
 
 <section id="abstract">
   <h2>Abstract</h2>
@@ -259,20 +251,6 @@
 
 <hr class="divider" />
 
-<section id="bibtex">
-  <h2>Citation</h2>
-  <p>If you find our work useful, please consider citing:</p>
-  <div class="bibtex-wrap">
-    <button class="copy-btn" onclick="copyBibtex()">Copy</button>
-    <pre id="bibtex-text">@inproceedings{chen2026psgnav,
-  title     = {PSG-Nav: Probabilistic Scene Graph Navigation via Multiverse Decision Making},
-  author    = {Rufeng Chen and Yue Chang and Xiaqiang Tang and Hechang Chen and Sihong Xie},
-  booktitle = {Proceedings of the 43rd International Conference on Machine Learning (ICML)},
-  year      = {2026},
-  url       = {https://arxiv.org/abs/2606.01313}
-}</pre>
-  </div>
-</section>
 
 <footer>
   <p>&copy; 2026 PSG-Nav &nbsp;&middot;&nbsp;
@@ -295,14 +273,7 @@
     document.getElementById('lightbox').classList.remove('active');
   }
   document.addEventListener('keydown', function(e) { if(e.key==='Escape') closeLightbox(); });
-  function copyBibtex() {
-    var text = document.getElementById('bibtex-text').innerText;
-    navigator.clipboard.writeText(text).then(function() {
-      var btn = document.querySelector('.copy-btn');
-      btn.textContent = 'Copied!';
-      setTimeout(function(){ btn.textContent = 'Copy'; }, 1500);
-    });
-  }
+
 </script>
 </body>
 </html>
